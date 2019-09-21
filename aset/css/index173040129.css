@@ -1,0 +1,62 @@
+body{
+	background-image: url(../img/index.jpg);
+}
+table{
+	background-color:blue;
+	margin-top: 200px;
+
+}
+td{
+	background-color: lightblue;
+	text-align: center;
+}
+.facebook{
+	width: 200px;
+	height: 100px;
+	background-image: url(../img/facebook.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	text-indent: -99999px;
+	position: absolute;
+	top: 200px;
+	right: 370px;
+}
+.top-bar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 40px;
+	background-color: lightblue;
+	border-bottom: 5px solid blue;
+	z-index: 999999;
+}
+.bg-kanan {
+	width: 400px;
+	height: 432px;
+	background: url(../img/bg_kanan.png) no-repeat;
+	bottom: 5px;
+	right: 50px;
+	position: absolute;
+	position: fixed;
+}
+
+.bg-kiri {
+	width: 400px;
+	height: 432px;
+	background: url(../img/bg_kiri.png) no-repeat;
+	bottom: 10px;
+	left:50px;
+	position: absolute;
+	position: fixed;
+}
+.bg-tengah {
+	width: 500px;
+	height: 450px;
+	background: url(../img/Dota.png) no-repeat;
+	top: 510px;
+	left:453px;
+	position: absolute;
+	position: fixed;
+}
+

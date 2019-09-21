@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#kotak{
+			width: 200px;
+			height: 200px;
+			background-color: salmon;
+			position: relative;
+			top: 20px;
+			left: 0px;
+		}
+	</style>
+</head>
+<body>
+	<button type="button" id="tombol1">ubah warna</button>
+	<button type="button" id="tombol2">putar</button>
+	<button type="button" id="tombol3">hilangkan</button>
+	<button type="button" id="tombol4">sembunyikan</button>
+	<div id="kotak"></div>
+
+
+	<script type="text/javascript">
+		var tombol1 = document.getElementById('tombol1');
+		var tombol2 = document.getElementById('tombol2');
+		var tombol3 = document.getElementById('tombol3');
+		var tombol4 = document.getElementById('tombol4');
+		var kotak = document.getElementById('kotak');
+
+		tombol1.addEventListener('click', function() {
+			kotak.style.backgroundColor = '#bada55';
+			kotak.style.transition = '1s';
+		});
+		tombol2.addEventListener('click', function() {
+			kotak.style.transform = 'rotate(360deg)' ;
+			kotak.style.transition = '2s';
+			kotak.style.width = '1px';
+			kotak.style.height = '1px';
+			kotak.style.opacity = '0';
+		});
+		tombol3.addEventListener('click', function() {
+			kotak.style.marginTop = '200px';
+			kotak.style.transition = '1s';
+			kotak.style.opacity = '0';
+			
+		});
+		tombol4.addEventListener('click', function() {
+			kotak.style.width = '200px';
+			kotak.style.transition = '1s';
+			kotak.style.opacity = '0';
+			
+		});
+	</script>
+</body>
+</html>
